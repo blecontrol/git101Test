@@ -15,8 +15,8 @@ void loop()
 {
   delay(dht.getMinimumSamplingPeriod());
 
-  float humidity = dht.getHumidity();  //ดึงค่าความชื้น
-  float temperature = dht.getTemperature(); //ดึงค่าอุณหภูมิ
+  float humidity = dht.getHumidity() + 5;  //ดึงค่าความชื้น
+  float temperature = dht.getTemperature() + 2; //ดึงค่าอุณหภูมิ
 
   Serial.print(dht.getStatusString());
   Serial.print("\t");
